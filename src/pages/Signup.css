@@ -1,5 +1,4 @@
-/* ===== Gradient Background ===== */
-body {
+.signup-page {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #FF6F00, #FFB300, #66BB6A);
@@ -11,14 +10,12 @@ body {
   min-height: 100vh;
 }
 
-/* Smooth gradient animation */
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* ===== Center Card ===== */
 .container {
   width: 100%;
   max-width: 400px;
@@ -50,11 +47,6 @@ body {
   color: #555;
 }
 
-/* ===== Form Styling ===== */
-.form-row {
-  margin-bottom: 15px;
-}
-
 label {
   display: block;
   font-size: 14px;
@@ -71,6 +63,7 @@ input {
   font-size: 14px;
   outline: none;
   transition: 0.3s;
+  margin-bottom: 15px;
 }
 
 input:focus {
@@ -78,7 +71,6 @@ input:focus {
   box-shadow: 0px 0px 8px rgba(255, 111, 0, 0.3);
 }
 
-/* ===== Buttons ===== */
 .login-btn {
   width: 100%;
   background: linear-gradient(90deg, #FF6F00, #FFB300);
@@ -97,13 +89,6 @@ input:focus {
   background: linear-gradient(90deg, #F57C00, #FFA000);
 }
 
-/* ===== Footer Text ===== */
-.text-center {
-  text-align: center;
-  font-size: 14px;
-  margin-top: 15px;
-}
-
 .text-orange {
   color: #FF6F00;
   font-weight: bold;
@@ -114,26 +99,6 @@ input:focus {
   text-decoration: underline;
 }
 
-/* ===== Social Buttons ===== */
-.social-row {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 12px;
+.small {
+  font-size: 14px;
 }
-
-.social-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  cursor: pointer;
-}
-
-.fb { background: #3b5998; }
-.tw { background: #1DA1F2; }
-.ap { background: #000; }
